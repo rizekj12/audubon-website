@@ -90,8 +90,8 @@ export default class App extends Component {
             {birds.map(bird => <Birds name={bird.name} pic={bird.image} />)}
           </div>
         </Route>
-        <Route path="/birdinfo" exact>
-          <BirdInfo />
+        <Route path="/birdinfo/:birdName" exact>
+          <BirdInfo allInfo={birds}/>
         </Route>
       </div>
     )

@@ -8,7 +8,7 @@ class Birds extends Component {
     render() {
         return (
             <>
-                <Link to="/birdinfo">
+                <Link to={`/birdinfo/${this.props.name}`}>
                     <div className="birddiv">
                         <img src={this.props.pic} alt='bird pic' />
                     </div>
